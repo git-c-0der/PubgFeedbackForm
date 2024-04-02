@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 id="title">PUBG Survey Form</h1>
+    <p class="description"><u>Your opinion matters to improve the platform.</u></p>
+    <link rel="stylesheet" href="pubgform.css">
+    <title>PUBG Experience Form</title>
+</head>
+
+
+<body>
+    <form id="survey-form">
+
+        <label class="time sabse-upar" for="name">Name</label>
+        <br>
+        <input placeholder="Name" type="text" name="name" id="name">
+
+        <br><br>
+
+        <label class="time" for="email">Email Id</label>
+        <br>
+        <input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Email" type="text"
+            name="email" id="email">
+
+        <br><br>
+
+        <label class="time" for="duration">Playing Hours</label>
+        <br>
+        <input min:"0" max:"24" placeholder="Duration" id="duration" type="number" name="duration">
+
+        <br><br>
+
+        <label class="time" for="gun">Favourite Gun</label>
+        <br>
+        <select class="list" id="gun" placeholder="Gun-Name" name="gun">
+            <option value="0">Gun-Name</option>
+            <option value="1">M416</option>
+            <option value="2">UMP9</option>
+            <option value="3">AWM</option>
+            <option value="4">M249</option>
+            <option value="5">AK47</option>
+        </select>
+
+        <br><br>
+
+        <fieldset class="time">
+            <legend for="time">Which time did you prefer to play at most?</legend>
+            <input type="radio" id="time" name="time" value="Morning">
+            <label for="time">Morning</label>
+            <input type="radio" id="time" name="time" value="AfterNoon">
+            <label for="time">AfterNoon</label>
+            <input type="radio" id="time" name="time" value="Evening">
+            <label for="time">Evening</label>
+            <input type="radio" id="time" name="time" value="Night">
+            <label for="time">Night</label>
+        </fieldset>
+
+        <br><br>
+
+        <fieldset class="time">
+            <legend>Which grenades are your favourite?</legend>
+            <input type="checkbox" value="Stun Grenade" id="grenade" name="grenade">
+            <label for="grenade">Stun Grenade</label><br>
+            <input type="checkbox" value="Frag Grenade" id="grenade" name="grenade">
+            <label for="grenade">Frag Grenade</label><br>
+            <input type="checkbox" value="Molotov Grenade" id="grenade" name="grenade">
+            <label for="grenade">Molotov Grenade</label><br>
+            <input type="checkbox" value="Smoke Grenade" id="grenade" name="grenade">
+            <label for="grenade">Smoke Grenade</label>
+        </fieldset>
+
+        <br><br>
+
+        <label class="time" for="comments">Any comments or suggestions?</label><br>
+        <textarea class="time" placeholder="Enter your comment here ..." rows="5" cols="50" id="comments" name="comments"></textarea>
+
+        <br>
+
+        <input type="submit" value="FIRE" id="submit" onclick="submitForm()">
+    </form>
+    <script src="pubgform.js"></script>
+
+
+</body>
+
+</html>

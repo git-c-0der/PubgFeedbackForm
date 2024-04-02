@@ -1,0 +1,95 @@
+body {
+   background-image: url("https://i.pinimg.com/originals/4b/db/84/4bdb8425ae5a2051961beef820b0e97e.jpg");
+  background-size: 100% 110%;
+  z-index:1;
+}
+
+.sabse-upar {
+  padding-top: 50px;
+}
+
+#title{
+  display: grid;
+  justify-items: center;
+  font-family:Garamond, non-serif;
+  color: #5c1a0a;
+  font-size:40px;
+  font-weight: 700;
+  padding:0.5px;
+  margin:1px;
+}
+
+.description {
+  color: #991f00;
+  padding:0.5px;
+  padding-bottom:27px;
+  margin:1px;
+  display: grid;
+  justify-items: center;
+  font-size:25px;
+}
+#survey-form{
+  z-index:5;
+  width:800px;
+  position: relative;
+  left: 60px;
+  right: 60px;
+  top:20px;
+  font-size:28px;
+  color:rgb(0, 0, 0);
+  background-color: rgba(128, 128, 128,0.4);
+}
+
+.time{
+  position:relative;
+  left:110px;
+}
+
+[type="text"]{
+  position:relative;
+  left:110px;
+  width: 400px;
+  border-radius:5%;
+  height: 25px;
+}
+
+[type="number"]{
+  border-radius:5%;
+  position:relative;
+  left:110px;
+  width: 400px;
+  height: 25px;
+}
+[type="submit"]{
+  border-radius:5%;
+  position:relative;
+  left:110px;
+  width: 100px;
+  height: 30px;
+}
+
+.list {
+  border-radius: 5%;
+  position:relative;
+  left:110px;
+  width: 401px;
+  height: 25px;
+}
+
+#play-time{
+  width: 550px;
+}
+
+#grenades{
+  width:550px;
+}
+
+#submit {
+  position: relative;
+  left: 360px;
+  font-size:15px;
+    font-weight:700;
+}
+#submit:hover{
+  background-color:#00b300;
+}
